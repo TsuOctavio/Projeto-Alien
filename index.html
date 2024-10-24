@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./Src/css/reset.css">
+    <link rel="stylesheet" href="./Src/css/estilo.css">
+    <link rel="stylesheet" href="./Src/css/responsivo.css">
+    <title>RPG Alien</title>
+
+</head>
+
+<body>
+    <div class="topo">
+        <img src="./Src/imagens/Alien logo.jpg" alt="Um circulo do alien" class="logo">
+        <h1>RPG Alien Noobs vs Xenomorfos falsificados</h1>
+    </div>
+
+    <div class="centro">
+        <nav class="botoes">
+            <ul>
+                <li class="botao ativo" id="introducao">
+                    <h2>Introdução da campanha</h2>
+                </li>
+                <li class="botao" id="status">
+                    <h2>Descrição de Status</h2>
+                </li>
+                <li class="botao" id="classes">
+                    <h2>Classes</h2>
+                </li>
+                <li class="botao" id="npcs">
+                    <h2>NPCs</h2>
+                </li>
+                <li class="botao" id="cenarios">
+                    <h2>Cenarios</h2>
+                </li>
+                <li class="botao" id="xenomorfos">
+                    <h2>Xenomorfos</h2>
+                </li>
+                <li class="botao" id="mapa">
+                    <h2>Mapa</h2>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="cartoes">
+            <Div class="cartao-botao introducao aberto" id="cartao-introducao">
+                <span><strong>Introdução</strong>
+
+                    A humanidade se espalhou pelo universo conhecido, colonizando planetas, explorando novos sistemas
+                    estelares, e estabelecendo rotas comerciais entre colônias distantes. No entanto, esse avanço
+                    tecnológico e expansionista veio com um preço terrível. Em regiões desconhecidas do espaço, foram
+                    descobertas formas de vida alienígenas que desafiam a compreensão humana, a mais mortal e temida
+                    dessas criaturas sendo o Xenomorfo.
+                    <br>
+                    Os Xenomorfos são organismos letais, capazes de adaptar-se rapidamente e destruir tudo em seu
+                    caminho. Eles são o ápice da evolução predatória, com ácido no sangue, força sobre-humana, e um
+                    ciclo de vida parasitário que transforma qualquer hospedeiro em uma arma mortal. O contato com estas
+                    criaturas é raramente sobrevivido, e aqueles que vivem para contar a história muitas vezes desejam
+                    não ter sobrevivido.
+                    <br>
+                    <strong>Corporações e Conspirações:</strong> O poder e a influência das grandes corporações dominam
+                    o cenário
+                    galáctico. Entre elas, a Weyland-Yutani é uma das mais poderosas, obcecada com a pesquisa e
+                    exploração dos Xenomorfos, visando transformá-los em armas biológicas ou em fontes de descoberta
+                    científica que possam render fortunas. Sob sua fachada de exploração científica e progresso,
+                    esconde-se uma agenda de experimentação e exploração a qualquer custo, mesmo que isso signifique
+                    sacrificar vidas humanas.
+                    A Nave Abandonada: Em um dos sistemas mais remotos e desconhecidos, um sinal de SOS foi captado por
+                    uma estação de monitoramento. A mensagem, codificada e fragmentada, parecia desesperada, com menções
+                    de uma "infestação incontrolável". A origem do sinal foi rastreada até uma nave de pesquisa
+                    científica, USCSS Valkyrie, uma nave de última geração especializada em biotecnologia e
+                    geneticistas. O que inicialmente era uma missão de rotina de pesquisa se transformou em um pesadelo.
+                    <br>
+                    <br>
+                    <strong>Função dos Jogadores:</strong>
+                    A Missão: Os jogadores assumem o papel de uma equipe de recuperação enviada pela Weyland-Yutani para
+                    investigar a USCSS Valkyrie. Oficialmente, a missão é simples: localizar e recuperar dados
+                    científicos vitais sobre um experimento envolvendo os Xenomorfos. No entanto, extraoficialmente, a
+                    corporação tem outros interesses – como capturar um espécime vivo e avaliar o potencial militar das
+                    mutações observadas nas criaturas.
+                    Sigilo e Contenção: A missão deve ser realizada em total sigilo. A Weyland-Yutani quer evitar que a
+                    infecção se espalhe e que outras corporações descubram os dados ou os Xenomorfos. Por isso, a equipe
+                    enviada é pequena, composta por especialistas que podem agir rapidamente e com discrição. Seus
+                    equipamentos são avançados, mas limitados, e as informações fornecidas sobre o que enfrentarão são
+                    escassas, para evitar alarmes desnecessários.
+                    Contexto em que os Jogadores são Inseridos:
+                    Ao chegarem à USCSS Valkyrie, a equipe rapidamente percebe que a situação é muito pior do que
+                    imaginavam. A nave está em completo caos: corredores manchados de sangue, portas trancadas ou
+                    danificadas, e sinais de luta desesperada. Sobreviventes são raros, e aqueles que encontram estão
+                    traumatizados ou próximos da loucura. Os sistemas da nave estão instáveis, com energia intermitente
+                    e comunicações cortadas.
+                    Equipamentos na Nave da Equipe
+                    <br>
+                    <br>
+                    <strong>Câmara de Criogenia de Contenção:</strong>
+                    Descrição: Uma unidade de contenção avançada, projetada para prender organismos perigosos em um
+                    estado de suspensão criogênica. A câmara é feita de uma liga metálica altamente resistente, capaz de
+                    suportar ataques ácidos dos Xenomorfos. Uma vez ativada, a câmara reduz rapidamente a temperatura
+                    interna a níveis criogênicos, congelando o alvo em segundos.
+                    Uso: A câmara é a melhor chance da equipe de capturar um Xenomorfo vivo para posterior estudo. No
+                    entanto, o processo de captura é arriscado, exigindo que o Xenomorfo seja forçado a entrar na câmara
+                    e que a equipe ative o mecanismo antes que a criatura escape ou cause danos irreparáveis.
+                    Limitações: A câmara só pode ser usada uma vez antes de precisar ser recalibrada e resfriada
+                    novamente, um processo que leva horas. Além disso, a eficácia da câmara depende de um sistema de
+                    energia estável, e qualquer falha no fornecimento de energia pode resultar na libertação da
+                    criatura.
+                    <br>
+                    <br>
+                    <strong>Canhão de Plasma:</strong>
+                    Descrição: Uma arma pesada e de alta energia, projetada para perfurar a carapaça de um Xenomorfo
+                    adulto. O canhão dispara um feixe concentrado de plasma que queima através da maioria dos materiais.
+                    Uso: Usado como último recurso em situações onde a contenção ou a fuga não são opções. Extremamente
+                    eficaz contra alvos isolados, especialmente em espaços abertos.
+                    Limitações: O canhão é pesado e consome muita energia, tornando-o impraticável para longos períodos
+                    de uso. Além disso, a energia necessária para operá-lo pode desviar recursos críticos de outros
+                    sistemas da nave.</span>
+            </Div>
+
+            <div class="cartao-botao cartao-status" id="cartao-status">
+                <span>
+                    <strong>Status dos personagens</strong>
+                    <br>
+                    <strong>-Força (FOR):</strong> Usado para ações físicas, como remover obstáculos, empurrar inimigos,
+                    ou resistir a
+                    desmaios.
+                    <br>
+                    <br>
+                    <strong>Destreza (DES):</strong> Usado para agilidade, como realizar parkour, esquivar-se de
+                    ataques, ou usar armas
+                    leves.
+                    <br>
+                    <br>
+                    <strong>Inteligência (INT):</strong> Usado para resolver problemas, hackear sistemas, criar ou
+                    modificar
+                    equipamentos, e realizar procedimentos médicos.
+                    <br>
+                    <br>
+                    <strong>Resistência (RES):</strong> Usado para suportar dor, venenos, ou efeitos adversos, como
+                    ácido ou desmaios.
+                    <br>
+                    <br>
+                    <strong>Percepção (PER):</strong> Usado para detectar ameaças, localizar inimigos, ou perceber sons
+                    e movimentos no
+                    ambiente.
+                </span>
+            </div>
+
+            <div class="cartao-botao cartao-classes" id="cartao-classes">
+                <span>
+                    <strong>Classes/Funções</strong>
+                    <br>
+                    <br>
+                    <strong>1. Médico</strong>
+                    <br>
+                    <strong>Descrição:</strong> Especialista em cuidados médicos, essencial para a sobrevivência da
+                    equipe em ambientes
+                    hostis. Capaz de tratar ferimentos e doenças, aumentando as chances de sobrevivência dos membros do
+                    grupo.
+                    <br>
+                    <strong>Habilidades:</strong>
+                    oPrimeiros Socorros: Pode estabilizar feridos e tratar ferimentos menores, evitando a perda de
+                    pontos de resistência.
+                    <br>
+                    <strong>Diagnóstico Médico:</strong> Capaz de identificar doenças, infecções, ou sinais de mutação
+                    em membros da
+                    equipe.
+                    <br>
+                    <strong>Extrair Chestburster:</strong> Pode salvar a vida de um personagem infectado, mas há uma
+                    chance
+                    significativa de falha se não for realizado corretamente. Falhas podem resultar na morte imediata do
+                    personagem ou na liberação do Chestburster durante o procedimento.
+                    <br>
+                    Bônus: +3 em Inteligência.
+                    <br>
+                    <strong>Equipamento Inicial:</strong> Kit médico, pistola, e um extrator de facehuger, Raio-X
+                    Portátil e 2
+                    Inibidores de Crescimento.
+                    <br>
+                    <strong>Característica:</strong> É difícil correr com o extrator de facehuger, te deixa mais lerdo
+                    por ser pesado.
+                    <br>
+                    <br>
+                    <br>
+                    <strong>2. Engenheiro</strong>
+                    <br>
+                    <strong>Descrição:</strong> Especialista em máquinas e eletrônica, essencial para reparos e
+                    manipulação de sistemas a bordo da nave.
+                    <br>
+                    <strong>Habilidades:</strong>
+                    <br>
+                    <strong>Reparos Rápidos:</strong> Capaz de consertar portas, armas, ou equipamentos de comunicação
+                    em tempo recorde.
+                    <br>
+                    <strong>Hacking:</strong> Pode acessar e manipular sistemas de segurança, câmeras, ou registros de
+                    dados, desbloqueando áreas ou informações cruciais de forma manual.
+                    <br>
+                    <strong>Construção de Dispositivos:</strong> Pode criar armadilhas improvisadas ou reparar
+                    maquinaria danificada.
+                    <br>
+                    Bônus: +3 em Inteligência.
+                    <br>
+                    <strong>Equipamento Inicial:</strong> Kit de ferramentas, um fuzil de assalto, lanterna, e um drone
+                    que transmite a imagem.
+                    <br>
+                    <br>
+                    <br>
+                    <strong>3. Soldado</strong>
+                    <strong>Descrição:</strong> Combatente treinado para lidar com ameaças físicas. Essencial para
+                    proteger a equipe de ataques e abrir caminho em situações perigosas.
+                    <br>
+                    <strong>Habilidades:</strong>
+                    <br>
+                    <strong>Combate Corpo a Corpo:</strong> Recebe um bônus em ataques físicos contra inimigos,
+                    especialmente em lutas corpo a corpo.
+                    <br>
+                    <strong>Tático:</strong> Pode usar a percepção para identificar posições estratégicas ou armadilhas
+                    no ambiente +2 em percepção.
+                    <br>
+                    <strong>Resistência:</strong> Testes de resistência aumentados em situações de combate ou stress.
+                    <br>
+                    Bônus: +2 em Força, +2 em Resistência, +2 em percepção pela habilidade Tático.
+                    <br>
+                    <strong>Equipamento Inicial:</strong> Pistola e rifle de pulso, kit de munição básica 3 pentes, uma
+                    faca, radar de movimento e 2 Redes de Contenção.
+                    <br>
+                    <br>
+                    <br>
+                    <strong>4. Técnico de Sistemas:</strong>
+                    <br>
+                    <strong>Descrição:</strong> Especialista em informática e sistemas computacionais. Fundamental para
+                    manipulação de
+                    dados, comunicação e controle remoto de subsistemas da nave.
+                    <br>
+                    <strong>Habilidades:</strong>
+                    <br>
+                    <strong>Destravar Sistemas:</strong> Capaz de desbloquear portas, cofres, ou sistemas de controle à
+                    distância.
+                    oAnálise de Dados: Pode interpretar logs de navegação, registros de segurança, ou dados científicos
+                    para descobrir pistas importantes.
+                    <br>
+                    <strong>Controle Remoto:</strong> Pode assumir controle remoto de drones, robôs, ou sistemas
+                    automatizados a bordo.
+                    <br>
+                    Bônus: +3 em Inteligência.
+                    <br>
+                    <strong>Equipamento Inicial:</strong> Laptop portátil com acesso a sistemas da nave, dispositivos de
+                    hacking, um
+                    robô para servir de agente de campo.
+                    <br>
+                    <br>
+                    <br>
+                    <strong>5. Operador de Carga</strong>
+                    <br>
+                    <strong>Descrição:</strong> Trabalhador experiente em manuseio de cargas pesadas e operação de
+                    equipamentos
+                    industriais. Útil em situações que exigem força bruta e manipulação de materiais perigosos.
+                    Habilidades:
+                    <br>
+                    <strong>Manipulação de Carga:</strong> Capaz de mover grandes obstáculos ou operar máquinas pesadas
+                    para abrir
+                    caminho.
+                    <br>
+                    <strong>Força Bruta:</strong> Recebe um bônus em situações que exigem força física intensa, como
+                    derrubar portas ou
+                    levantar companheiros feridos.
+                    <br>
+                    <strong>Resistência Física:</strong> Pode suportar mais dano físico antes de sucumbir.
+                    <br>
+                    Bônus: +3 em Força +1 Resistencia.
+                    <br>
+                    <strong>Equipamento Inicial:</strong> Exoesqueleto de carga leve, barras de suporte, ferramentas de
+                    carga.
+                    <br>
+                    <br>
+                    <br>
+                    <strong>6. Piloto</strong>
+                    <br>
+                    <strong>Descrição:</strong> Especialista em pilotagem e navegação. Responsável por conduzir a nave,
+                    além de ser
+                    capaz de operar veículos menores ou sistemas de fuga.
+                    <br>
+                    <strong>Habilidades:</strong>
+                    <br>
+                    <strong>Pilotagem:</strong> Capaz de realizar manobras complicadas com a nave ou veículos,
+                    aumentando a chance de
+                    escapar de situações perigosas.
+                    <br>
+                    <strong>Navegação Estelar:</strong> Pode interpretar mapas estelares ou calcular saltos
+                    hiperespaciais em situações
+                    de emergência.
+                    <br>
+                    <strong>Operação de Sistemas de Fuga:</strong> Capaz de ativar e pilotar pods de escape, garantindo
+                    a evacuação da
+                    equipe em caso de necessidade.
+                    <br>
+                    Bônus: +2 em Destreza, +1 em Percepção.
+                    <br>
+                    <strong>Equipamento Inicial:</strong> Interface de navegação portátil, manual estelar, kit de
+                    primeiros socorros de
+                    emergência.
+                    <br>
+                    <br>
+                    <br>
+                    <strong>7. Cientista:</strong>
+                    <br>
+                    <strong>Descrição:</strong> Especialista em pesquisa científica, crucial para a análise dos dados
+                    coletados e
+                    entendimento das mutações e comportamentos dos Xenomorfos.
+                    <br>
+                    <strong>Habilidades:</strong>
+                    <br>
+                    <strong>Análise Científica:</strong> Pode interpretar dados complexos e descobrir fraquezas ou
+                    comportamentos dos
+                    Xenomorfos.
+                    <br>
+                    <strong>Pesquisa e Desenvolvimento:</strong> Capaz de melhorar equipamentos com modificações
+                    científicas
+                    improvisadas.
+                    <br>
+                    <strong>Coleta de Amostras:</strong> Pode coletar e analisar amostras biológicas ou químicas para
+                    obter informações
+                    valiosas.
+                    <br>
+                    Bônus: +3 em Inteligência.
+                    <br>
+                    <strong>Equipamento Inicial:</strong> Kit de coleta e análise de amostras, banco de dados
+                    científico, kit de
+                    cientista.
+                </span>
+            </div>
+
+            <div class="cartao-botao npcs" id="cartao-npcs">
+                <span>
+                    <strong>Tripulação</strong>
+                    <br>
+                    <strong>1. Piloto:</strong> Marcus "Skipper" Ryker
+                    <br>
+                    <strong>Descrição:</strong> Marcus, apelidado de "Skipper", é um veterano piloto espacial com anos
+                    de experiência em
+                    operações de transporte e missões de resgate. Ele é carismático, mas mantém um ar de ceticismo em
+                    relação à missão, tendo visto muitas missões anteriores darem errado.
+                    <br>
+                    <br>
+                    <strong>2. Robô Infiltrado:</strong> ECHO-7 (Codinome "Echo")
+                    <br>
+                    <strong>Descrição:</strong> ECHO-7, ou "Echo", é um robô de aparência humana enviado por uma
+                    corporação rival para
+                    sabotar a missão e obter os dados científicos para sua empresa. Programado para parecer humano, Echo
+                    é frio e calculista, mas extremamente eficiente.
+                    <br>
+                    <br>
+                    <strong>3. Técnico de Sistemas:</strong> Dr. Alan Graves
+                    <br>
+                    <strong>Descrição:</strong> Dr. Alan Graves é um técnico de sistemas altamente qualificado,
+                    responsável por manter e operar os sistemas complexos da nave. Ele é meticuloso e dedicado ao seu
+                    trabalho, mas também tem uma curiosidade insaciável sobre os experimentos realizados a bordo.
+                    <br>
+                    <br>
+                    <strong>4. um sobrevivente sem nome</strong>
+                    <br>
+                    <strong>Descrição:</strong>A princio iria atrapalhar a equipe de jogadores, sendo uma vitima pedindo
+                    socorro, ai trancaria os jogadores com o alien.
+                </span>
+            </div>
+
+            <div class="cartao-botao cartao-cenarios" id="cartao-cenarios">
+                <span>
+                    <strong>Descrição de cenários</strong>
+                    <br>
+                    <strong>1. Local de Pouso de Naves</strong>
+                    <br>
+                    Descrição: A campanha começa no hangar de pouso, uma área ampla e escura, com luzes de emergência
+                    piscando. Algumas naves estão parcialmente danificadas ou abandonadas, com marcas de ácido corroendo
+                    o chão em vários pontos. A tensão no ar é palpável.
+                    <br>
+                    Elementos Importantes:
+                    <br>
+                    Portas Trancadas: As portas principais para a nave estão seladas, exigindo que os jogadores subam ao
+                    painel de controle no andar superior para destrancá-las.
+                    <br>
+                    Ácido Corrosivo: Áreas do piso corroídas pelo ácido dos Xenomorfos, forçando os jogadores a se
+                    moverem com cuidado.
+                    <br>
+                    <br>
+                    <strong>2. Painel de Controle das Portas</strong>
+                    <br>
+                    Descrição: O painel de controle no andar superior controla o acesso ao hangar. A sala está
+                    parcialmente destruída, com equipamentos danificados e sinais de luta. Monitores exibem imagens de
+                    câmeras de segurança, algumas delas mostrando criaturas movendo-se nas sombras.
+                    <br>
+                    Desafios:
+                    Terminal Danificado: O terminal de controle principal está avariado e precisa de reparos ou de uma
+                    solução improvisada para funcionar.
+                    <br>
+                    Invasão de Xenomorfos: Durante o tempo em que os jogadores tentam restaurar o controle, há uma
+                    chance de que os Xenomorfos tentem invadir a sala, criando um momento de tensão.
+                    <br>
+                    <br>
+                    <strong>3. Corredor Bloqueado</strong>
+                    <br>
+                    Descrição: Após sair do painel de controle, os jogadores entram em um corredor escuro e estreito,
+                    que leva a três direções diferentes. O caminho direto está bloqueado com barricadas improvisadas
+                    feitas de móveis, caixas e peças de naves, deixadas por sobreviventes desesperados.
+                    <br>
+                    Opções de Acesso:
+                    Força Bruta: Os jogadores podem tentar remover as barricadas, mas isso pode atrair atenção
+                    indesejada.
+                    <br>
+                    Caminhos Alternativos: O corredor oferece outras opções para os jogadores explorarem antes de
+                    decidir lidar com a barricada.
+                    <br>
+                    <br>
+                    <strong>Cômodos Principais</strong>
+                    <br>
+                    <br>
+                    <strong>4. Clínica Médica</strong>
+                    <br>
+                    Descrição: A clínica está em completo desarranjo, com macas derrubadas, armários arrombados e sangue
+                    espalhado pelo chão. Equipamentos médicos, como kits de primeiros socorros, podem ser encontrados
+                    aqui, mas o local também pode conter perigos ocultos.
+                    <br>
+                    Elementos Importantes:
+                    <br>
+                    Equipamento Médico: Kits de cura, desfibriladores, e talvez até alguma medicação experimental que
+                    pode ser usada como vantagem.
+                    <br>
+                    Perigos: Um sobrevivente ferido pode estar escondido aqui, mas ele pode estar infectado ou em estado
+                    de pânico, atacando qualquer um que se aproxime.
+                    <br>
+                    <strong>5. Dormitório</strong>
+                    <br>
+                    Descrição: Este é um espaço claustrofóbico, com beliches, armários pessoais e vestígios de uma
+                    evacuação apressada. Objetos pessoais e diários podem fornecer pistas sobre o que aconteceu com a
+                    tripulação.
+                    <br>
+                    Elementos Importantes:
+                    <br>
+                    Pertences Abandonados: Pode haver munição, armas improvisadas ou registros pessoais que revelam
+                    informações sobre a infestação.
+                    <br>
+                    Xenomorfos Escondidos: Pequenos Xenomorfos ou Ovos podem estar escondidos aqui, transformando o
+                    dormitório em uma armadilha mortal se os jogadores não forem cuidadosos.
+                    <br>
+                    <br>
+                    <strong>6. Cozinha</strong>
+                    <br>
+                    Descrição: A cozinha está abandonada, com restos de alimentos espalhados e eletrodomésticos ainda
+                    funcionando. O lugar está silencioso demais, e os jogadores podem sentir que algo está espreitando
+                    nas sombras.
+                    <br>
+                    Elementos Importantes:
+                    <br>
+                    Rações e Suprimentos: Os jogadores podem encontrar rações energéticas ou suprimentos para se
+                    fortalecerem temporariamente.
+                    <br>
+                    Perigos: A cozinha pode estar infestada com criaturas menores, ou até mesmo com sinais de que alguém
+                    tentou se esconder ali, mas não conseguiu sobreviver.
+                    <br>
+                    <br>
+                    <strong>7. Laboratório</strong>
+                    <br>
+                    Descrição: O laboratório é o coração da missão, onde os dados de pesquisa e amostras alienígenas
+                    foram armazenados. Equipamentos caros e dados cruciais estão espalhados pelo local, mas também há
+                    evidências de que experimentos deram muito errado.
+                    <br>
+                    Elementos Importantes:
+                    <br>
+                    Amostras Alienígenas: Este é o objetivo principal dos jogadores. No entanto, pegar as amostras pode
+                    desencadear uma reação dos Xenomorfos, alertando-os sobre a presença dos jogadores.
+                    <br>
+                    Equipamentos de Pesquisa: Podem ser usados para analisar amostras, mas também podem ter armadilhas
+                    ou problemas técnicos.
+                    <br>
+                    <br>
+                    <strong>8. Painel de Controle da Nave</strong>
+                    <br>
+                    Descrição: Esta é a sala de controle central da nave, onde todos os sistemas principais são
+                    gerenciados. Pode ser o local para iniciar a sequência de autodestruição ou redirecionar a nave para
+                    outro destino.
+                    <br>
+                    Elementos Importantes:
+                    <br>
+                    Controle Total: Aqui, os jogadores podem acessar os sistemas de segurança, trancar portas, ou
+                    iniciar procedimentos de emergência.
+                    <br>
+                    Perigos: A sala pode estar comprometida por ataques anteriores, ou pode ser invadida por Xenomorfos
+                    enquanto os jogadores estão distraídos.
+                    Cômodos Opcionais
+                    <br>
+                    <br>
+                    <strong>9. Sala de Reuniões</strong>
+                    <br>
+                    Descrição: Um espaço onde a tripulação se reunia para discutir missões e estratégias. Agora, está
+                    deserta, com materiais de reunião abandonados às pressas.
+                    Elementos Importantes:
+                    <br>
+                    Informações Cruciais: Arquivos de missão ou gravações de reuniões anteriores podem revelar segredos
+                    sobre a missão e a infestação.
+                    <br>
+                    Perigos: O lugar pode estar monitorado ou ser uma armadilha para prender os jogadores.
+                    <br>
+                    <br>
+                    <strong>10. Armazém</strong>
+                    <br>
+                    Descrição: Um grande espaço de armazenamento contendo caixas e contêineres com suprimentos, peças de
+                    reposição e, possivelmente, armamento.
+                    <br>
+                    Elementos Importantes:
+                    <br>
+                    Suprimentos Abandonados: Armas, munições, e ferramentas podem ser encontrados aqui, essenciais para
+                    a sobrevivência.
+                    <br>
+                    Perigos: Pode ser um espaço ideal para emboscadas, com Xenomorfos escondidos entre as caixas.
+                </span>
+            </div>
+
+            <div class="cartao-botao cartao-xenomorfos" id="cartao-xenomorfos">
+                <span>
+                    <strong>Estágios dos Aliens</strong>
+                    <br>
+                    <strong>1.Ovos</strong>
+                    <br>
+                    <strong>Descrição:</strong> Os ovos são grandes e orgânicos, com uma textura semelhante a couro.
+                    Ficam
+                    estacionários até que algum ser vivo se aproxime. Eles liberam um Facehugger quando detectam
+                    movimento ou calor próximo.
+                    <br>
+                    <strong>Ameaça:</strong> Se não forem destruídos rapidamente, podem liberar Facehuggers que podem
+                    atacar
+                    qualquer personagem desprevenido.
+                    <br>
+                    <br>
+                    <strong>2.Facehugger</strong>
+                    <br>
+                    <strong>Descrição:</strong> Criaturas aracnídeas, rápidas e mortais, que saltam para o rosto das
+                    vítimas para
+                    depositar um embrião alienígena. Elas são difíceis de detectar até que estejam a poucos metros
+                    de distância.
+                    <br>
+                    <strong>Ameaça:</strong> Se um Facehugger conseguir se prender ao rosto de um personagem, ele
+                    precisa de
+                    assistência imediata ou pode resultar em um Chestburster incubado. A remoção requer uma
+                    combinação de força e perícia, mas sempre com riscos.
+                    <br>
+                    <br>
+                    <strong>3.Chestburster</strong>
+                    <br>
+                    <strong>Descrição:</strong> O estágio jovem do Xenomorfo, ainda pequeno mas extremamente agressivo.
+                    Emergem do
+                    peito da vítima em um momento de violência visceral, e rapidamente fogem para se desenvolverem
+                    em locais mais seguros.
+                    <br>
+                    <strong>Ameaça:</strong> Pequeno e rápido, difícil de acertar, mas extremamente perigoso. Pode
+                    emboscar
+                    jogadores em lugares estreitos ou escuros.
+                    <br>
+                    <br>
+                    <strong>4.Xenomorfo Adulto</strong>
+                    <br>
+                    <strong>Descrição:</strong> A forma adulta e mais icônica do Xenomorfo, com grande força física,
+                    alta
+                    resistência e a habilidade de se mover silenciosamente pelas sombras. Capaz de causar danos
+                    devastadores com suas garras, cauda e mandíbulas internas.
+                    <br>
+                    <strong>Ameaça:</strong> Mortal em combate, capaz de emboscar os jogadores ou eliminá-los
+                    rapidamente em
+                    confrontos diretos. Também pode utilizar o ácido de seu sangue como arma, corroendo ambientes ou
+                    infligindo danos a quem o ferir.
+                </span>
+            </div>
+
+            <div class="cartao-botao cartao-mapa" id="cartao-mapa">
+                <span>
+                    <img src="./Src/imagens/Mapa 1° andar.jpg" alt="mapa 1 andar" class="mapa 1">
+                    <img src="./Src/imagens/Mapa 2° andar.jpg" alt="mapa 2 andar" class="mapa 2">
+                </span>
+            </div>
+        </div>
+
+    </div>
+    <script src="./Src/js/index.js"></script>
+</body>
+
+</html>

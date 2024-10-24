@@ -1,0 +1,94 @@
+body {
+    font-family: "Orbitron",  sans-serif;
+}
+
+.topo{
+    display: flex;
+    align-items: center;
+    background-image: url(../imagens/Endeavor.png);
+    color: #ffffff;
+    padding: 20px;
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover;
+}
+
+.logo{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: 50px;
+    padding-left: 100px;
+}
+
+.centro {
+    background-image: url(../imagens/Fundo\ PC.png);
+    display: flex;
+    height: calc(100vh - 100px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+nav {
+    width: 120px;
+    font-size: 10px;
+    margin-left: 525px;
+    margin-top: 130px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    width: 120px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #867b7b;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+}
+
+nav ul li:hover {
+    background-color: #5a5353;
+}
+
+nav ul li.ativo {
+    background-color: #045c2b;
+    color: rgb(115, 134, 125);
+}
+
+.cartao-de-informacao {
+    flex-grow: 1;
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow-y: auto;
+}
+
+.cartao-botao{
+    color: #ffffff;
+    display: none;
+    max-width: 559px;
+    margin-left: 70px;
+    margin-top: 170px;
+    justify-items: left;
+    max-height: 350px;
+    overflow-y: scroll;
+}
+
+.cartao-botao.aberto{
+    display: block;
+}
+
+.mapa{
+    max-width: 559px;
+}
