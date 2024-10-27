@@ -14,30 +14,34 @@ body {
 }
 
 .logo{
-    width: 300px;
-    height: 300px;
+    width: 10%;
+    height: 10%;
     border-radius: 50%;
 }
 
 h1 {
-    font-size: 50px;
-    padding-left: 100px;
+    font-size: 5vh;
+    padding-left: 10%;
 }
 
 .centro {
     background-image: url(../imagens/Fundo\ PC.png);
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     height: calc(100vh - 100px);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    position: relative;
 }
 
 nav {
+    position: relative;
+    top: -9%;
     width: 120px;
     font-size: 10px;
-    margin-left: 525px;
-    margin-top: 130px;
 }
 
 nav ul {
@@ -64,8 +68,15 @@ nav ul li.ativo {
     color: rgb(115, 134, 125);
 }
 
+.cartoes {
+    position: relative;
+    display: flex;
+    align-self: center;
+    width: 520px;
+    top: -9%;
+}
+
 .cartao-de-informacao {
-    flex-grow: 1;
     background-color: white;
     padding: 20px;
     margin: 20px;
@@ -77,9 +88,6 @@ nav ul li.ativo {
 .cartao-botao{
     color: #ffffff;
     display: none;
-    max-width: 559px;
-    margin-left: 70px;
-    margin-top: 170px;
     justify-items: left;
     max-height: 350px;
     overflow-y: scroll;
